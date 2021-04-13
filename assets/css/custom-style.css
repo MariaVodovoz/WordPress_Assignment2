@@ -1,0 +1,189 @@
+body {
+  background-color: rgba(219, 248, 247, 0.781) !important;
+}
+/** set globals **/
+main {
+  margin-left: 400px !important;
+}
+h1 {
+  font-family: "Potta One", cursive !important;
+  color: rgba(38, 177, 195, 0.911);
+  text-shadow: 2px 2px #350101;
+  text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Comfortaa", cursive !important;
+  color: rgb(236, 173, 0);
+}
+
+p,
+a {
+  font-family: "Comfortaa", cursive;
+  font-size: 20px;
+  text-decoration: none;
+}
+/*Links*/
+a:link {
+  color: rgb(140, 0, 255);
+}
+
+a:visited {
+  color: rgb(0, 187, 187);
+}
+
+a:hover {
+  color: rgb(72, 243, 72);
+}
+a:active {
+  color: hotpink;
+}
+
+.logo {
+  height: 200px;
+}
+header {
+  display: flex;
+  height: 110px;
+  align-items: center;
+}
+header article {
+  height: 90px;
+  flex-grow: 1;
+}
+header article a img {
+  height: 100%;
+  width: auto;
+}
+header nav {
+  height: 90px;
+  display: flex;
+}
+header nav ul {
+  display: flex;
+  height: 100%;
+  margin: 0px;
+  align-items: center;
+  list-style: none;
+}
+header nav ul li {
+  padding: 0px 35px;
+}
+footer {
+  display: grid !important;
+  grid-template-columns: repeat(4, 25%);
+  align-items: start;
+  border-top: solid 2px rgb(1, 101, 114);
+  padding: 50px;
+}
+.footer-area-one {
+  display: flex;
+  align-items: center;
+}
+.footer-area-one img {
+  height: 200px !important;
+  width: auto !important;
+  padding: 10px;
+}
+footer ul {
+  list-style: none;
+  padding: 0px;
+}
+/** home page **/
+
+.home {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer footer";
+  grid-template-columns: repeat(4, 25%);
+  grid-auto-rows: auto;
+}
+.home header {
+  grid-area: header;
+}
+.home main {
+  grid-area: main;
+}
+.home footer {
+  grid-area: footer;
+}
+#sidebar {
+  grid-area: sidebar;
+}
+/** Homepage  **/
+.masthead {
+  background-size: cover;
+  height: 80vh;
+}
+.masthead div {
+  background-color: rgba(100, 98, 98, 0.548);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.masthead div h1 {
+  width: 100%;
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+}
+.row-one {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+}
+.row-one article {
+  padding: 10px;
+}
+.row-one article img {
+  width: 100%;
+  height: auto;
+}
+.row-two {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.row-two article {
+  padding: 25px;
+}
+/** style the posts **/
+.post-main-v2 {
+  display: flex;
+  padding: 0% 2% 2% 0%;
+}
+#sidebar ul {
+  list-style: none;
+}
+#search-form-1 {
+  font-size: 16px;
+  padding: 2px;
+}
+#sidebar > ul:nth-child(1) > li > form > input.search-submit {
+  padding: 5px 25px;
+  margin-left: 2px;
+  font-size: 16px;
+}
+#sidebar > ul > li > h2 {
+  font-size: 25px;
+  margin: 10px 0px;
+}
+#sidebar > ul > li > ul {
+  padding-left: 0px;
+}
+.all-posts,
+.some-posts {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto;
+  padding: 20px;
+}
+.all-posts article img,
+.some-posts article img {
+  width: 100% !important;
+  height: auto !important;
+}
